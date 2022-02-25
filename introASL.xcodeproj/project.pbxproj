@@ -16,6 +16,7 @@
 		7A6188FE27C988BE008F60AE /* introASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6188FD27C988BE008F60AE /* introASLTests.swift */; };
 		7A61890827C988BE008F60AE /* introASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61890727C988BE008F60AE /* introASLUITests.swift */; };
 		7A61890A27C988BE008F60AE /* introASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61890927C988BE008F60AE /* introASLUITestsLaunchTests.swift */; };
+		7A61891727C98909008F60AE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A61891627C98909008F60AE /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7A61890327C988BE008F60AE /* introASLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = introASLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A61890727C988BE008F60AE /* introASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introASLUITests.swift; sourceTree = "<group>"; };
 		7A61890927C988BE008F60AE /* introASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A61891627C98909008F60AE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7A6188DA27C988B4008F60AE = {
 			isa = PBXGroup;
 			children = (
+				7A61891627C98909008F60AE /* .gitignore */,
 				7A6188E527C988B5008F60AE /* introASL */,
 				7A6188FC27C988BE008F60AE /* introASLTests */,
 				7A61890627C988BE008F60AE /* introASLUITests */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A61891727C98909008F60AE /* .gitignore in Resources */,
 				7A6188F327C988BE008F60AE /* LaunchScreen.storyboard in Resources */,
 				7A6188F027C988BE008F60AE /* Assets.xcassets in Resources */,
 				7A6188EE27C988B5008F60AE /* Main.storyboard in Resources */,
