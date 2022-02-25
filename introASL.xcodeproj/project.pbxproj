@@ -17,6 +17,7 @@
 		7A61890827C988BE008F60AE /* introASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61890727C988BE008F60AE /* introASLUITests.swift */; };
 		7A61890A27C988BE008F60AE /* introASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61890927C988BE008F60AE /* introASLUITestsLaunchTests.swift */; };
 		7A61891727C98909008F60AE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A61891627C98909008F60AE /* .gitignore */; };
+		7A6748D627C98D0100635C66 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6748D527C98D0100635C66 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A61890727C988BE008F60AE /* introASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introASLUITests.swift; sourceTree = "<group>"; };
 		7A61890927C988BE008F60AE /* introASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A61891627C98909008F60AE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7A6748D527C98D0100635C66 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7A6188EF27C988BE008F60AE /* Assets.xcassets */,
 				7A6188F127C988BE008F60AE /* LaunchScreen.storyboard */,
 				7A6188F427C988BE008F60AE /* Info.plist */,
+				7A6748D527C98D0100635C66 /* SearchBar.swift */,
 			);
 			path = introASL;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6188EB27C988B5008F60AE /* ViewController.swift in Sources */,
+				7A6748D627C98D0100635C66 /* SearchBar.swift in Sources */,
 				7A6188E727C988B5008F60AE /* AppDelegate.swift in Sources */,
 				7A6188E927C988B5008F60AE /* SceneDelegate.swift in Sources */,
 			);
