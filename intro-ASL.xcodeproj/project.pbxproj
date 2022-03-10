@@ -14,6 +14,7 @@
 		7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */; };
 		7A2851C827D98BD400A26531 /* intro_ASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */; };
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
+		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7A2851C327D98BD400A26531 /* intro-ASLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intro-ASLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITests.swift; sourceTree = "<group>"; };
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		7A2851A027D98BCF00A26531 = {
 			isa = PBXGroup;
 			children = (
+				7A2851D827D9933D00A26531 /* .gitignore */,
 				7A2851AB27D98BD000A26531 /* intro-ASL */,
 				7A2851BC27D98BD300A26531 /* intro-ASLTests */,
 				7A2851C627D98BD400A26531 /* intro-ASLUITests */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2851B427D98BD300A26531 /* Preview Assets.xcassets in Resources */,
+				7A2851D927D9933D00A26531 /* .gitignore in Resources */,
 				7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
