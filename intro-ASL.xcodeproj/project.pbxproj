@@ -16,6 +16,7 @@
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
 		7A4E25CD27D9957A00DFCAB1 /* searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E25CC27D9957A00DFCAB1 /* searchbar.swift */; };
+		7A4E25CF27D9975E00DFCAB1 /* sampledata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A4E25CC27D9957A00DFCAB1 /* searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbar.swift; sourceTree = "<group>"; };
+		7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampledata1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7A2851AE27D98BD000A26531 /* ContentView.swift */,
 				7A2851B027D98BD300A26531 /* Assets.xcassets */,
 				7A2851B227D98BD300A26531 /* Preview Content */,
+				7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */,
 			);
 			path = "intro-ASL";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4E25CD27D9957A00DFCAB1 /* searchbar.swift in Sources */,
+				7A4E25CF27D9975E00DFCAB1 /* sampledata1.swift in Sources */,
 				7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 			);
