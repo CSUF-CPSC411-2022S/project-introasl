@@ -1,21 +1,85 @@
 //
-//  ContentView.swift
-//  intro-ASL
+//  Lessons.View
+//  View for main menu
 //
-//  Created by csuftitan on 3/9/22.
+//  Created by Justin Galvez on 2/25/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack {
+                HStack(alignment: .center) {
+                    Text("Welcome to introASL").font(.title)
+                }
+                Spacer()
+                HStack(alignment: .center){
+                    Text("What would you like to learn today?").padding()
+                }
+                VStack{
+                    Spacer()
+//                    Button(action:{
+//
+//                    }){
+//                        Text(Lessons().menu_alphabet).padding()
+//                    }
+//                    Button(action:{
+//                        //NavigationLink
+//                    }){
+//                        Text(Lessons().menu_numbers).padding()
+//                    }
+//                    Button(action:{
+//                        //NavigationLink
+//                    }){
+//                        Text(Lessons().menu_words).padding()
+//                    }
+//                    Button(action:{
+//                        //NavigationLink
+//                    }){
+//                        Text(Lessons().menu_phrases).padding()
+//                    }
+                    NavigationLink(destination: alpha()){
+                        Text(Lessons().menu_alphabet).padding()
+                    }
+                    NavigationLink(destination: num()){
+                        Text(Lessons().menu_numbers).padding()
+                    }
+                    NavigationLink(destination: word()){
+                        Text(Lessons().menu_words).padding()
+                    }
+                    NavigationLink(destination: phrase()){
+                        Text(Lessons().menu_phrases).padding()
+                    }
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct alpha : View{
+    var body: some View{
+        Text("pizza")
     }
 }
+
+struct num : View{
+    var body: some View{
+        Text("pasta")
+    }
+}
+
+struct word : View{
+    var body: some View{
+        Text("turtle")
+    }
+}
+
+struct phrase : View{
+    var body: some View{
+        Text("strawberry")
+    }
+}
+
