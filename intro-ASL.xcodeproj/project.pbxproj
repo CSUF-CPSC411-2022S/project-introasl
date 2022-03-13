@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A03715627DE90BD00227F7B /* Progression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A03715527DE90BD00227F7B /* Progression.swift */; };
 		7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */; };
 		7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AE27D98BD000A26531 /* ContentView.swift */; };
 		7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B027D98BD300A26531 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A03715527DE90BD00227F7B /* Progression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progression.swift; sourceTree = "<group>"; };
 		7A2851A927D98BD000A26531 /* intro-ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-ASL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLApp.swift; sourceTree = "<group>"; };
 		7A2851AE27D98BD000A26531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */,
 				7A2851AE27D98BD000A26531 /* ContentView.swift */,
+				7A03715527DE90BD00227F7B /* Progression.swift */,
 				7A2851B027D98BD300A26531 /* Assets.xcassets */,
 				7A2851B227D98BD300A26531 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A03715627DE90BD00227F7B /* Progression.swift in Sources */,
 				7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 			);
