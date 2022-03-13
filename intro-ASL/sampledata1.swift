@@ -13,7 +13,7 @@ public var keywordslist = [
 "My name is " ,
 "Im going to eat",
 "Im hungry",
-"Good Moring",
+"Good Morning",
 "Good Afternoon",
 "Good Evening" ,
 "Hello" ,

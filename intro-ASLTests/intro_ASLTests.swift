@@ -9,28 +9,26 @@ import XCTest
 @testable import intro_ASL
 
 class intro_ASLTests: XCTestCase {
+    
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testLetterExample()  {
+        let Searcher = searchbar (searchText: "z")
+        XCTAssertEqual(Searcher.words , ["z"])
+        // it would equal to z since it exits in the array
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testWordExample()   {
+        let Searcher = searchbar (searchText: "good morning")
+        XCTAssertEqual(Searcher.words , ["good morning"])
+        // it would equal to good morning since it exits in the array
+        
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testFilterExample() {
+        let Searcher = searchbar (searchText: "a")
+        XCTAssertFalse(Searcher.words == ["a"]) //would return false ,since it would return all the results that have letter a
+        
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
+    
 }

@@ -8,40 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var listofKeywords = keywordslist
-    @State var searchText = ""
-    var body: some View {
-       NavigationView{
+   @State var listofKeyword = []
+    @State var searchText: String = ""
+    
+    @StateObject var searchbars = searchbar(searchText: "" )
+    var body: some View
+  {
+       NavigationView
+    {
+           VStack(alignment: .leading )
+     {
+               
            List{
-                ForEach(words , id:\.self) { keyword in
+               
+               ForEach(searchbars.words , id:\.self)
+               { keyword in
                     HStack {
                         Text(keyword.capitalized)
                         Spacer()
                         Image(systemName: "figure.walk")
-                }
+                           }
                     .padding()
                     
-                }
-              //  .searchable(text: $searchText)
+               }
             }
-            //.searchable(text: $searchText)
+     }
             .navigationTitle("ASL APP")
-            .searchable(text: $searchText)
-            
-        }
+            .searchable(text: $searchbars.searchText)
+   }
         
-        
-    }
-    var words: [String] {
-        let lcwords = listofKeywords.map {$0.lowercased() }
-        
-        return searchText == "" ? lcwords : lcwords.filter{$0.contains(searchText.lowercased())}
-    }
+ }
 }
 
-struct ContentView_Previews: PreviewProvider{
+struct ContentView_Previews: PreviewProvider
+{
     
-    static var previews: some View {
+    static var previews: some View
+    {
         
         ContentView()
     }
