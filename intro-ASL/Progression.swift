@@ -12,7 +12,7 @@ struct Progression {
     
     var progressValue: Double {
         switch lesson {
-            case 0...80: return Double(lesson) + 0.25
+            case 1...80: return Double(lesson) + 0.25
             default: return 0
         }
     }

@@ -9,28 +9,20 @@ import XCTest
 @testable import intro_ASL
 
 class intro_ASLTests: XCTestCase {
+    
+    func testValidProgression() throws {
+       let progress = Progression(lesson: 9)
+       XCTAssertEqual(progress.progressValue, Double(9) + 0.25)
+       }
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testNegativeProgression() throws {
+       let progress = Progression(lesson: 0)
+       XCTAssertEqual(progress.progressValue, 0.0)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testZeroProgression() throws {
+       let progress = Progression(lesson: -10)
+       XCTAssertEqual(progress.progressValue, 0)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }

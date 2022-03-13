@@ -51,7 +51,7 @@ struct AchievmentTab: View {
         VStack {
             Text("Achievments")
                 .padding(.all)
-                .font(.headline)
+                .font(.largeTitle)
             HStack{
                 ProgressionBar(progressValue: $progressValue)
                     .frame(height: 25)
