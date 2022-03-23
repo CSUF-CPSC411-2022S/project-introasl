@@ -7,10 +7,19 @@
 
 import Foundation
 
-struct Scores {
-    var scores : [String:Int] = [:]
+class Scores: ObservableObject {
+    @Published var scores : [String:Int] = [:]
     
-    //var updatedHighscores = scores.sorted{ $0.value > $1.value }
+    var updatedScoreList : [String:Int] {
+        var updatedScores : [String:Int] = [:]
+        if !scores.isEmpty {
+            for (key, value) in scores {
+                updatedScores[key] = value
+            }
+        }
+        return updatedScores
+    }
+    
 
     init(scores: [String:Int] ) {
         self.scores = scores

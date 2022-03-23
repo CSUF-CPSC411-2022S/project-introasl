@@ -12,7 +12,7 @@ class intro_ASLTests: XCTestCase {
     
     func testValidProgression() throws {
        let progress = Progression(lesson: 9)
-       XCTAssertEqual(progress.progressValue, Double(9) + 0.25)
+       XCTAssertEqual(progress.progressValue, Float(9)/100)
        }
 
     func testNegativeProgression() throws {
@@ -25,4 +25,18 @@ class intro_ASLTests: XCTestCase {
        XCTAssertEqual(progress.progressValue, 0)
     }
     
+    func testGreaterThan100Progression() throws {
+       let progress = Progression(lesson: 112)
+       XCTAssertEqual(progress.progressValue, 100)
+    }
+    
+    func testEmptyScores() throws {
+        let scores = Scores(scores: [:])
+        XCTAssertTrue(scores.updatedScoreList.isEmpty)
+    }
+    
+    func testNonEmptyScores() throws {
+        let scores = Scores(scores: ["Quiz 1":10])
+        XCTAssertEqual(scores.updatedScoreList, ["Quiz 1":10])
+    }
 }
