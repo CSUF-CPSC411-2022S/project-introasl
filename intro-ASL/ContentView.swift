@@ -25,6 +25,18 @@ struct ContentView: View {
                { keyword in
                     HStack {
                         Text(keyword.capitalized)
+                        //if(keyword.capitalized == "Good Evening")
+                       //{
+                        NavigationLink(destination: Text("Goes to one of the lessons 1 ")) {
+                            //Text(keyword.capitalized)
+                        }
+                       // }
+                       // if(keyword.capitalized == "Good Morning")
+                       // {
+                       // NavigationLink(destination: Text("Goes to one of the lesson 2 ")) {
+                            //Text(keyword.capitalized)
+                       // }
+                       // }
                         Spacer()
                         Image(systemName: "figure.walk")
                            }
