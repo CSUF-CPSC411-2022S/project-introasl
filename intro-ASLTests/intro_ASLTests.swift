@@ -32,11 +32,12 @@ class intro_ASLTests: XCTestCase {
     
     func testEmptyScores() throws {
         let scores = Scores(scores: [:])
-        XCTAssertTrue(scores.updatedScoreList.isEmpty)
+        XCTAssertTrue(scores.scores.isEmpty)
     }
     
     func testNonEmptyScores() throws {
-        let scores = Scores(scores: ["Quiz 1":10])
-        XCTAssertEqual(scores.updatedScoreList, ["Quiz 1":10])
+        let scores = Scores(scores: ["Quiz 1":10, "Quiz 2":15])
+
+        XCTAssertEqual(scores.scores, ["Quiz 1":10, "Quiz 2":15])
     }
 }

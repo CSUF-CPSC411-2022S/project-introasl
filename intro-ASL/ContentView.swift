@@ -82,8 +82,6 @@ struct AchievmentTab: View {
 
 struct ScoreTab: View {
     @State var scores = Scores(scores: ["Lesson 1" : 10, "Lesson 2" : 20, "Lesson 3" : 15])
-    @State var lesson : String = ""
-    @State var score : Int = 0
     
     var body: some View {
         VStack {
@@ -92,7 +90,7 @@ struct ScoreTab: View {
                 .font(.largeTitle)
             NavigationView {
                 List {
-                    ForEach(scores.updatedScoreList.sorted(by: <), id:\.key) {key, value in
+                    ForEach(scores.scores.sorted(by: <), id:\.key) {key, value in
                             Section(header: Text("\(key)")) {
                                 NavigationLink(destination: Text("\(key) Scores")) {
                                     Text("Score : \(value)")
