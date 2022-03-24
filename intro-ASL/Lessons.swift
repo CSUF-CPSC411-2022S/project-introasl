@@ -25,6 +25,14 @@ class Everything{
                             ]
     
     var phrases = ["Hello, How are you?":"☝️ 👍 👎 ✊"] //place video or reference to one here
+    
+    func alpha_count() -> Int{
+        var counter: Int = 0
+        for (_,_) in alphabet{
+            counter += 1
+        }
+        return counter
+    }
 }
 
 class Lessons : Everything {

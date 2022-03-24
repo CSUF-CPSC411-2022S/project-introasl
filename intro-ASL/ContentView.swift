@@ -61,15 +61,42 @@ struct ContentView: View {
 
 struct alpha : View{
     var body: some View{
-        Text("pizza")
+        NavigationView{
+            List{
+                Section(header: Text("Letters")){
+                    NavigationLink(destination: handsign_a()){
+                        Text("A")
+                    }
+                    NavigationLink(destination: handsign_b()){
+                        Text("B")
+                    }
+                    NavigationLink(destination: handsign_z()){
+                        Text("Z")
+                    }
+                }
+            }
+        }
     }
 }
 
 struct num : View{
     var body: some View{
-        Text("pasta")
+        NavigationView{
+            List{
+                Section(header: Text("Numbers")){
+                    NavigationLink(destination: handsign_0()){
+                        Text("0")
+                    }
+                    NavigationLink(destination: handsign_9()){
+                        Text("9")
+                    }
+                }
+            }
+        }
     }
 }
+
+//etc
 
 struct word : View{
     var body: some View{

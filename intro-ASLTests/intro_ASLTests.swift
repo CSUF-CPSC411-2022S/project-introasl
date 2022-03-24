@@ -23,5 +23,12 @@ class intro_ASLTests: XCTestCase {
         
         XCTAssertEqual(managercheck, "Alphabet")
     }
+    
+    func testCounter(){
+        let manager = Everything()
+        let managercheck = manager.alpha_count()
+        
+        XCTAssertEqual(managercheck, 3)
+    }
 }
 
