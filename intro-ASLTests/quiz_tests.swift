@@ -12,27 +12,28 @@ class QuizTest: XCTestCase
 {
     func testCreateQuestion()
     {
-        var quiz = Quiz()
+        let quiz = Quiz()
         quiz.CreateQuestion("Question A")
-        XCTAssertEqual(try quiz.question, "Question A")
+        XCTAssertNotNil(quiz.questions.contains("Question A"))
     }
 
     func testCreateQuestionFail()
     {
         let quiz = Quiz()
         quiz.CreateQuestion("Not A Question")
-        XCTAssertEqual(try quiz.question, "")
+        XCTAssertNil(quiz.questions.contains("Question A"))
     }
 
     func testCheckAnswer()
     {
         let quiz = Quiz()
         quiz.CreateQuestion("Question A")
+        
         let correctAnswer = quiz.answerDictionary["Question A"]
         
         if let unwrapped = correctAnswer
         {
-            XCTAssert(try quiz.CheckAnswer(unwrapped))
+            XCTAssert(quiz.CheckAnswer(unwrapped))
         }
     }
 
@@ -40,7 +41,7 @@ class QuizTest: XCTestCase
     {
         let quiz = Quiz()
         quiz.CreateQuestion("Question A")
-        XCTAssertFalse(try quiz.CheckAnswer("Wrong Answer"))
+        XCTAssertFalse(quiz.CheckAnswer("Wrong Answer"))
     }
 /*
     func testTimer()
