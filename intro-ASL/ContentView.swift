@@ -23,15 +23,17 @@ struct ContentView: View {
 
 struct searcher : View{
     @State var listofKeyword = []
-     @State var searchText: String = ""
+    @SceneStorage("searchText") var searchText: String = ""
+    @SceneStorage("searchText2") var searchText2: String = ""
      @StateObject var searchbars = searchbar(searchText: "" )
+    @AppStorage("sizeMultiplier") var sizeMultiplier = 0.8
     var body: some View {
         
         NavigationView
      {
             VStack(alignment: .leading )
-      {
-                
+      {     //Text("Recent search:" )
+         
             List{
                 
                 ForEach(searchbars.words , id:\.self)
@@ -55,11 +57,24 @@ struct searcher : View{
                             }
                      .padding()
                      
-                }
+                } .font(.custom("Arial", size: CGFloat(18 * sizeMultiplier)))
+               
              }
+            
+          
+          
+              
+              NavigationLink(destination: Settings()) {
+                  Text("⚙️ Settings")
+              }  .padding(.leading, 150)
+          
       }
+             //TextField("Name", text: $searchText)
              .navigationTitle("ASL APP")
              .searchable(text: $searchbars.searchText)
+             .background(Color(.systemGray6))
+            // .searchable(text: $searchText)
+             
     }
         
     }
