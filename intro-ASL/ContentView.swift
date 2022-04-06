@@ -64,7 +64,7 @@ struct searcher : View{
           
           
               
-              NavigationLink(destination: Settings()) {
+              NavigationLink(destination: Settingsbar()) {
                   Text("⚙️ Settings")
               }  .padding(.leading, 150)
           

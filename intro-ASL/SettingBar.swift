@@ -20,7 +20,7 @@ struct ButtonDesign: ViewModifier {
 }
 
 
-struct Settings: View {
+struct Settingsbar: View {
     @AppStorage("sizeMultiplier") var sizeMultiplier = 0.8
     var body: some View {
         VStack {
@@ -57,7 +57,7 @@ struct Settings: View {
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        Settings()
+        Settingsbar()
     }
 }
 
