@@ -17,7 +17,7 @@ import SwiftUI
 struct ContentView: View
 {
     @StateObject var quiz = Quiz()
-
+    @AppStorage("highScore") var highScore = 0
     var body: some View {
         NavigationView {
             VStack {
@@ -25,12 +25,14 @@ struct ContentView: View
                 NavigationLink(destination: QuestionView()) {
                     Text("Start Quiz")
                 }
+                Spacer()
+                Text("High Score: \(highScore)")
             }
             .onAppear {
                 for _ in 1...5 {
                     quiz.CreateQuestion()
                 }
-                print("\(quiz.currentChoices)")
+                //print("\(quiz.questions)")
             }
         }.environmentObject(quiz)
     }
@@ -93,9 +95,13 @@ struct AnswerButton: View
                 } label: {
                     Text("\(quiz.currentChoices[index])")
                 }
-                
             }
-     //   }
+            //Spacer()
+            //NavigationLink(destination: ContentView()) {
+              //  Text("Return Home")
+                
+            //}
+        //}
     }
 }
 
