@@ -5,51 +5,39 @@
 //  Created by Justin Galvez on 2/25/22.
 //
 
+import Foundation
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack {
-                HStack(alignment: .center) {
-                    Text("Welcome to introASL").font(.title)
+                if let yay = UIImage(named: "introASL"){
+                    Image(uiImage: yay)
+                        Spacer()
                 }
+//                HStack(alignment: .center) {
+//                    Text("Welcome to introASL").font(.title)
+//                }
+                
                 Spacer()
                 HStack(alignment: .center){
-                    Text("What would you like to learn today?").padding()
+                    Text("What would you like to learn today?")
+                        .padding()
+                        .font(.custom("Arial", size: 22))
                 }
                 VStack{
                     Spacer()
-//                    Button(action:{
-//
-//                    }){
-//                        Text(Lessons().menu_alphabet).padding()
-//                    }
-//                    Button(action:{
-//                        //NavigationLink
-//                    }){
-//                        Text(Lessons().menu_numbers).padding()
-//                    }
-//                    Button(action:{
-//                        //NavigationLink
-//                    }){
-//                        Text(Lessons().menu_words).padding()
-//                    }
-//                    Button(action:{
-//                        //NavigationLink
-//                    }){
-//                        Text(Lessons().menu_phrases).padding()
-//                    }
                     NavigationLink(destination: alpha()){
                         Text(Lessons().menu_alphabet).padding()
                     }
                     NavigationLink(destination: num()){
                         Text(Lessons().menu_numbers).padding()
                     }
-                    NavigationLink(destination: word()){
+                    NavigationLink(destination: words()){
                         Text(Lessons().menu_words).padding()
                     }
-                    NavigationLink(destination: phrase()){
+                    NavigationLink(destination: phrases()){
                         Text(Lessons().menu_phrases).padding()
                     }
                     Spacer()
@@ -98,15 +86,33 @@ struct num : View{
 
 //etc
 
-struct word : View{
+struct words : View{
     var body: some View{
-        Text("turtle")
+        NavigationView{
+            List{
+                Section(header: Text("Words")){
+                    NavigationLink(destination: handsign_pizza()){
+                        Text("Pizza")
+                    }
+                    NavigationLink(destination: handsign_turtle()){
+                        Text("Turtle")
+                    }
+                }
+            }
+        }
     }
 }
 
-struct phrase : View{
+struct phrases : View{
     var body: some View{
-        Text("strawberry")
+        NavigationView{
+            List{
+                Section(header: Text("Phrases")){
+                    NavigationLink(destination: handsign_hello_how_are_you()){
+                        Text("Hello, how are you")
+                    }
+                }
+            }
+        }
     }
 }
-

@@ -30,5 +30,6 @@ class intro_ASLTests: XCTestCase {
         
         XCTAssertEqual(managercheck, 3)
     }
+    
+    // Implement test for links and images
 }
-

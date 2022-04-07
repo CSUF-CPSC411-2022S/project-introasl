@@ -41,16 +41,7 @@ class Lessons : Everything {
     var menu_numbers: String = "Numbers"
     var menu_words: String = "Words"
     var menu_phrases: String = "Phrases"
-//    var lessons: [String:[String:String]] //Will use to button that accesses alphabet dictionary
-    
-//    init(_ lessons: [String:[String:String]]){
-//        self.lessons = lessons
-//    }
-//    init(lessons: [String:[String:String]]){
-//        super.init(){
-//            self.lessons = [menu_alphabet:alphabet]
-//        }
-//    }
+
 }
 
 
