@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     var body: some View {
         TabView {
             AchievmentTab()
@@ -27,55 +27,67 @@ struct ContentView: View {
 
 struct ProgressionBar: View {
     @Binding var progressValue: Float
+    @AppStorage("redIndex") var redIndex = 1.0
+    @AppStorage("greenIndex") var greenIndex = 1.0
+    @AppStorage("blueIndex") var blueIndex = 1.0
+
     var body: some View {
         Text("Lesson 1").font(.headline)
-            GeometryReader { geometry in
-                ZStack(alignment: .leading) {
-                    Rectangle().frame(width: geometry.size.width, height: geometry.size.height)
-                        .opacity(0.5)
-                        .foregroundColor(.gray)
-    
-                    Rectangle().frame(width: min(CGFloat(progressValue)*geometry.size.width, geometry.size.width), height: geometry.size.height)
-                        .foregroundColor(Color.mint)
-                }.cornerRadius(30.0)
-        }
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                Rectangle().frame(width: geometry.size.width, height: geometry.size.height)
+                    .opacity(0.5)
+                    .foregroundColor(.gray)
+                Rectangle().frame(width: min(CGFloat(progressValue)*geometry.size.width, geometry.size.width), height: geometry.size.height)
+                    .foregroundColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+            }
+        }.cornerRadius(30.0)
     }
 }
+
 
 struct AchievmentTab: View {
     @State var progress = Progression(lesson: 0)
     @State var value: String = ""
     @State var progressValue: Float = 0.0
-    
+
     var body: some View {
-        VStack {
-            Text("Achievments")
-                .padding(.all)
-                .font(.largeTitle)
+        NavigationView {
             VStack {
-                ScrollView {
+                HStack {
+                    HStack {
+                        Text("Achievments")
+                            .font(.largeTitle)
+                        }
                     HStack{
-                        ProgressionBar(progressValue: $progressValue)
-                            .frame(height: 25)
-                            .padding()
+                        NavigationLink(destination: Settings()) {
+                            Text("⚙️")
+                        }
                     }
                 }
-            }
-            Spacer()
-            VStack {
-                Button (action: {
-                    let v = Int.random(in: 1..<101)
-                    progress.lesson = v
-                    progressValue = progress.progressValue
-                    print(progressValue)
-                }){
-                    Text("Randomize")
+                VStack {
+                    ScrollView {
+                        HStack{
+                            ProgressionBar(progressValue: $progressValue)
+                                .frame(height: 25)
+                                .padding()
+                        }
+                    }
                 }
+                Spacer()
+                VStack {
+                    Button (action: {
+                        let v = Int.random(in: 1..<101)
+                        progress.lesson = v
+                        progressValue = progress.progressValue
+                        print(progressValue)
+                    }){
+                        Text("Randomize")
+                    }
+                }
+                Spacer()
             }
-            Spacer()
-
         }
-        
     }
 }
 
