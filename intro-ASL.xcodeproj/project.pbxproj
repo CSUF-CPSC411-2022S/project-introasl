@@ -15,6 +15,8 @@
 		7A2851C827D98BD400A26531 /* intro_ASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */; };
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
+		7A2A187527FF786B006259C9 /* keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A187427FF786B006259C9 /* keywords.swift */; };
+		7A2C137427FBC727008A171D /* SettingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C137327FBC727008A171D /* SettingBar.swift */; };
 		7A4E25CD27D9957A00DFCAB1 /* searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E25CC27D9957A00DFCAB1 /* searchbar.swift */; };
 		7A4E25CF27D9975E00DFCAB1 /* sampledata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITests.swift; sourceTree = "<group>"; };
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7A2A187427FF786B006259C9 /* keywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywords.swift; sourceTree = "<group>"; };
+		7A2C137327FBC727008A171D /* SettingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBar.swift; sourceTree = "<group>"; };
 		7A4E25CC27D9957A00DFCAB1 /* searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbar.swift; sourceTree = "<group>"; };
 		7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampledata1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,8 @@
 				7A2851B027D98BD300A26531 /* Assets.xcassets */,
 				7A2851B227D98BD300A26531 /* Preview Content */,
 				7A4E25CE27D9975E00DFCAB1 /* sampledata1.swift */,
+				7A2C137327FBC727008A171D /* SettingBar.swift */,
+				7A2A187427FF786B006259C9 /* keywords.swift */,
 			);
 			path = "intro-ASL";
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			files = (
 				7A4E25CD27D9957A00DFCAB1 /* searchbar.swift in Sources */,
 				7A4E25CF27D9975E00DFCAB1 /* sampledata1.swift in Sources */,
+				7A2C137427FBC727008A171D /* SettingBar.swift in Sources */,
 				7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
+				7A2A187527FF786B006259C9 /* keywords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"intro-ASL/Preview Content\"";
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -443,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASL";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASL-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"intro-ASL/Preview Content\"";
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -471,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASL";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASL-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,6 +496,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -505,6 +516,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -523,6 +535,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASLUITests";
@@ -540,6 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H3V8222HJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fullerton.ecs.intro-asl.intro-ASLUITests";

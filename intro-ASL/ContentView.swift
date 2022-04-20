@@ -10,25 +10,26 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View
-  {
+    {    TabView {
        searcher()
-        
+          .tabItem {
+              Image(systemName: "car")
+              Text("Crosswalks")
+          }
+      
+    }
  }
 }
 
 
 
-
-
-
 struct searcher : View{
     @State var listofKeyword = []
-    @SceneStorage("searchText") var searchText: String = ""
-    @SceneStorage("searchText2") var searchText2: String = ""
+    @State var searchText: String = ""
      @StateObject var searchbars = searchbar(searchText: "" )
     @AppStorage("sizeMultiplier") var sizeMultiplier = 0.8
     var body: some View {
-        
+       
         NavigationView
      {
             VStack(alignment: .leading )
@@ -41,9 +42,10 @@ struct searcher : View{
                      HStack {
                          Text(keyword.capitalized)
                          //if(keyword.capitalized == "Good Evening")
+                         // NavigationLink(destination: Text(keyword.capitalized))
                         //{
-                         NavigationLink(destination: Text(keyword.capitalized)) {
-                             //Text(keyword.capitalized)
+                         NavigationLink(destination: keywords(imageName: keyword.capitalized)) {
+                             
                          }
                         // }
                         // if(keyword.capitalized == "Good Morning")
@@ -78,6 +80,7 @@ struct searcher : View{
     }
         
     }
+    
 }
 
 
