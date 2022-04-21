@@ -18,6 +18,8 @@
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
 		D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140A927D9BBE40021BB20 /* quiz.swift */; };
 		D92140AD27D9BDF20021BB20 /* quiz_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140AB27D9BCF00021BB20 /* quiz_tests.swift */; };
+		7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41827EC3C800034ED43 /* Lessons.swift */; };
+		7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D92140A927D9BBE40021BB20 /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
 		D92140AB27D9BCF00021BB20 /* quiz_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_tests.swift; sourceTree = "<group>"; };
+		7AECE41827EC3C800034ED43 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handsigns_pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,9 @@
 			children = (
 				7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */,
 				7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */,
+				7A2851AE27D98BD000A26531 /* ContentView.swift */,
+				7AECE41827EC3C800034ED43 /* Lessons.swift */,
+				7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */,
 				7A2851B027D98BD300A26531 /* Assets.xcassets */,
 				7A2851B227D98BD300A26531 /* Preview Content */,
 				D92140A927D9BBE40021BB20 /* quiz.swift */,
@@ -272,6 +279,9 @@
 			files = (
 				7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */,
 				574E1B4127FF7B3D0083B166 /* question.swift in Sources */,
+				7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */,
+				7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */,
+				7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 				D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */,
 			);
@@ -435,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"intro-ASL/Preview Content\"";
+				DEVELOPMENT_TEAM = S9UZ6ZTG9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -463,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"intro-ASL/Preview Content\"";
+				DEVELOPMENT_TEAM = S9UZ6ZTG9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
