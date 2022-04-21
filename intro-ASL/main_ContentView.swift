@@ -10,15 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        main_menu()
+    }
+}
+
+struct main_menu : View{
+    var body: some View {
         NavigationView{
             VStack {
                 if let yay = UIImage(named: "introASL"){
                     Image(uiImage: yay)
                         Spacer()
                 }
-//                HStack(alignment: .center) {
-//                    Text("Welcome to introASL").font(.title)
-//                }
                 
                 Spacer()
                 HStack(alignment: .center){
@@ -52,7 +55,7 @@ struct alpha : View{
         NavigationView{
             List{
                 Section(header: Text("Letters")){
-                    NavigationLink(destination: handsign_a()){
+                    NavigationLink(destination: handsign(letter: "a")){
                         Text("A")
                     }
                     NavigationLink(destination: handsign_b()){
@@ -116,3 +119,8 @@ struct phrases : View{
         }
     }
 }
+
+
+
+//----------------------------------------End of Justin Work-----------------------------------------------
+
