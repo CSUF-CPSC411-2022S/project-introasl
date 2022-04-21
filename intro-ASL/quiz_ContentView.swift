@@ -14,13 +14,6 @@
 
 import SwiftUI
 
-struct ContentView: View
-{
-    var body: some View {
-        QuizView()
-    }
-}
-
 struct QuizView: View
 {
     @StateObject var quiz = Quiz()
@@ -89,11 +82,5 @@ struct AnswerButton: View
             }
         }
         //Spacer()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

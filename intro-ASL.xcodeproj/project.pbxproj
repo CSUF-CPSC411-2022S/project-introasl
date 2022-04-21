@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		574E1B4127FF7B3D0083B166 /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1B4027FF7B3D0083B166 /* question.swift */; };
+		57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301A92812161E00C4AB06 /* main_ContentView.swift */; };
 		7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */; };
 		7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */; };
 		7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B027D98BD300A26531 /* Assets.xcassets */; };
@@ -16,10 +17,10 @@
 		7A2851C827D98BD400A26531 /* intro_ASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */; };
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
-		D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140A927D9BBE40021BB20 /* quiz.swift */; };
-		D92140AD27D9BDF20021BB20 /* quiz_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140AB27D9BCF00021BB20 /* quiz_tests.swift */; };
 		7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41827EC3C800034ED43 /* Lessons.swift */; };
 		7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */; };
+		D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140A927D9BBE40021BB20 /* quiz.swift */; };
+		D92140AD27D9BDF20021BB20 /* quiz_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140AB27D9BCF00021BB20 /* quiz_tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		574E1B4027FF7B3D0083B166 /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
+		57C301A92812161E00C4AB06 /* main_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main_ContentView.swift; sourceTree = "<group>"; };
 		7A2851A927D98BD000A26531 /* intro-ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-ASL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLApp.swift; sourceTree = "<group>"; };
 		7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_ContentView.swift; sourceTree = "<group>"; };
@@ -52,10 +54,10 @@
 		7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITests.swift; sourceTree = "<group>"; };
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D92140A927D9BBE40021BB20 /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
-		D92140AB27D9BCF00021BB20 /* quiz_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_tests.swift; sourceTree = "<group>"; };
 		7AECE41827EC3C800034ED43 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handsigns_pages.swift; sourceTree = "<group>"; };
+		D92140A927D9BBE40021BB20 /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
+		D92140AB27D9BCF00021BB20 /* quiz_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 			children = (
 				7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */,
 				7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */,
-				7A2851AE27D98BD000A26531 /* ContentView.swift */,
+				57C301A92812161E00C4AB06 /* main_ContentView.swift */,
 				7AECE41827EC3C800034ED43 /* Lessons.swift */,
 				7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */,
 				7A2851B027D98BD300A26531 /* Assets.xcassets */,
@@ -280,7 +282,8 @@
 				7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */,
 				574E1B4127FF7B3D0083B166 /* question.swift in Sources */,
 				7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */,
-				7A2851AF27D98BD000A26531 /* ContentView.swift in Sources */,
+				57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */,
+				7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */,
 				7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 				D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */,

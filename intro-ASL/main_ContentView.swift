@@ -55,7 +55,8 @@ struct alpha : View{
         NavigationView{
             List{
                 Section(header: Text("Letters")){
-                    NavigationLink(destination: handsign(letter: "a")){
+                    //NavigationLink(destination: handsign(letter: "a")){
+                    NavigationLink(destination: handsign_a()){
                         Text("A")
                     }
                     NavigationLink(destination: handsign_b()){
