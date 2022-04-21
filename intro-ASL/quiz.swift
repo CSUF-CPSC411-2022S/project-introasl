@@ -151,7 +151,7 @@ class Quiz: ObservableObject, Identifiable {
                 score += 1
             }
         }
-        Reset()
+        //Reset()
         return score
     }
     
