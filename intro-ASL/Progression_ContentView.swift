@@ -18,20 +18,48 @@ struct Progression_ContentView: View {
         
         //Tab bar's text + Icon Color
         UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
 
     }
     var body: some View {
-        TabView {
-            AchievmentTab()
-                .tabItem{
-                    Label("Achievements", systemImage: "1.square.fill")
+        NavigationView {
+             VStack() {
+                 HStack {
+                     Spacer()
+                         .navigationTitle("Achievements")
+                         .navigationBarTitleDisplayMode(.inline)
+                         .navigationBarItems(
+                             leading:
+                                 NavigationLink(destination: ContentView()) {
+                                     Image(systemName: "house")
+                                         .foregroundColor(Color.white)
+                                 },
+                             trailing:
+                                 NavigationLink(destination: Settings()) {
+                                     Image(systemName: "slider.horizontal.3")
+                                         .foregroundColor(Color.white)
+                                 }
+                         )
+                     Spacer()
+                 }
+                 .padding(.all)
+                 .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                
+                 TabView {
+                    ProgressionTab()
+                        .tabItem{
+                            Label("Progression", systemImage: "1.square.fill")
+                        }
+                    ScoreTab()
+                        .tabItem{
+                            Label("Scores", systemImage: "2.square.fill")
+                        }
                 }
+            }
+        }
+        //.accentColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+        .navigationBarHidden(true)
 
-            ScoreTab()
-                .tabItem{
-                    Label("Scores", systemImage: "2.square.fill")
-                }
-        }.accentColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
     }
 }
 
@@ -61,7 +89,7 @@ struct ProgressionBar: View {
 }
 
 
-struct AchievmentTab: View {
+struct ProgressionTab: View {
     @AppStorage("redIndex") var redIndex = 0.611
     @AppStorage("greenIndex") var greenIndex = 0.751
     @AppStorage("blueIndex") var blueIndex = 0.631
@@ -69,33 +97,15 @@ struct AchievmentTab: View {
     @State var progress = Progression(lessons: ["Lesson 1": 1, "Lesson 2" : 10])
 
     var body: some View {
-       NavigationView {
-            VStack() {
-                HStack {
-                    Text("Achievments")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                    Spacer()
-                    NavigationLink(destination: Settings()) {
-                        Image(systemName: "slider.horizontal.3")
-                            .foregroundColor(Color.white)
-                    }
+        VStack {
+            ScrollView{
+                ForEach(progress.progressList.sorted(by: <), id: \.key) { key, value in
+                    ProgressionBar(progressValue: value, lesson_name: key)
+                        .frame(height: 25)
+                        .padding()
                 }
-                .padding(.all)
-                .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
-                Spacer()
-                VStack {
-                    ScrollView{
-                        ForEach(progress.progressList.sorted(by: <), id: \.key) { key, value in
-                            ProgressionBar(progressValue: value, lesson_name: key)
-                                .frame(height: 25)
-                                .padding()
-                        }
-                    }
-                }.padding(.all)
             }
-       }
+        }.padding(.all)
     }
 }
 
@@ -111,16 +121,6 @@ struct ScoreTab: View {
         VStack {
             NavigationView {
                 VStack {
-                    HStack {
-                        Text("Quizz Scores")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                        Spacer()
-                    }
-                    .padding(.all)
-                    .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
-                    
                     List {
                         ForEach(scores.scores.sorted(by: <), id:\.key) {key, value in
                             Section(header: Text("\(key)")

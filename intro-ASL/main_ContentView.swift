@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        main_menu()
+        HomePage()
     }
 }
 
@@ -124,3 +124,36 @@ struct phrases : View{
 
 //----------------------------------------End of Justin Work-----------------------------------------------
 
+
+//Author: Daisy
+//Date Added: 4-22-2022
+struct HomePage: View {
+    var body: some View {
+        NavigationView {
+            VStack {
+                if let yay = UIImage(named: "introASL"){
+                    Image(uiImage: yay)
+                        Spacer()
+                }
+                Text("Welcome back!")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                Spacer()
+                NavigationLink(destination: main_menu()) {
+                    Text("Lessons")
+                }
+        //                NavigationLink(destination: QuizView()) {
+        //                  Text("Quiz")
+        //                }
+                NavigationLink(destination: Progression_ContentView()) {
+                    Text("Achievements")
+                }
+                NavigationLink(destination: ContentViewSearchbar()) {
+                    Text("Search")
+                }
+                Spacer()
+            }
+        }.navigationBarHidden(true)
+    }
+}
