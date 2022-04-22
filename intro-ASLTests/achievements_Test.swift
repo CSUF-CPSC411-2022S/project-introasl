@@ -8,7 +8,7 @@
 import XCTest
 @testable import intro_ASL
 
-class intro_ASLTests: XCTestCase {
+class achievements_Test: XCTestCase {
     
     func testValidProgression() throws {
         let progress = Progression(lessons: ["Lesson 1" : 9])
