@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonDesign: ViewModifier {
+struct Progression_ButtonDesign: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding()

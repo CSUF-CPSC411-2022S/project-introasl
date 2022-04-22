@@ -11,7 +11,7 @@ import SwiftUI
 struct intro_ASLApp: App {
     var body: some Scene {
         WindowGroup {
-            Progression_ContentView()
+            ContentView()
         }
     }
 }

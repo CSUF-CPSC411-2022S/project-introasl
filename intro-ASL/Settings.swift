@@ -109,7 +109,7 @@ struct Settings: View {
     }
 }
 
-struct Settings_Previews: PreviewProvider {
+struct Progression_Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings()
     }
