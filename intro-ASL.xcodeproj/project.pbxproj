@@ -10,6 +10,12 @@
 		574E1B4127FF7B3D0083B166 /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1B4027FF7B3D0083B166 /* question.swift */; };
 		57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301A92812161E00C4AB06 /* main_ContentView.swift */; };
 		57C301B2281260E900C4AB06 /* keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301B1281260E900C4AB06 /* keywords.swift */; };
+		7A071EF72813208B00486442 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EF62813208B00486442 /* Modifier.swift */; };
+		7A071EF9281320A900486442 /* Progression_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EF8281320A900486442 /* Progression_ContentView.swift */; };
+		7A071EFB281320B100486442 /* Progression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EFA281320B100486442 /* Progression.swift */; };
+		7A071EFD281320BA00486442 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EFC281320BA00486442 /* Scores.swift */; };
+		7A071EFF281320C100486442 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EFE281320C100486442 /* Settings.swift */; };
+		7A071F05281321BF00486442 /* achievements_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071F04281321BF00486442 /* achievements_Test.swift */; };
 		7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */; };
 		7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B027D98BD300A26531 /* Assets.xcassets */; };
 		7A2851B427D98BD300A26531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B327D98BD300A26531 /* Preview Assets.xcassets */; };
@@ -49,6 +55,12 @@
 		574E1B4027FF7B3D0083B166 /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
 		57C301A92812161E00C4AB06 /* main_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main_ContentView.swift; sourceTree = "<group>"; };
 		57C301B1281260E900C4AB06 /* keywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywords.swift; sourceTree = "<group>"; };
+		7A071EF62813208B00486442 /* Modifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		7A071EF8281320A900486442 /* Progression_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression_ContentView.swift; sourceTree = "<group>"; };
+		7A071EFA281320B100486442 /* Progression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression.swift; sourceTree = "<group>"; };
+		7A071EFC281320BA00486442 /* Scores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		7A071EFE281320C100486442 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		7A071F04281321BF00486442 /* achievements_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = achievements_Test.swift; sourceTree = "<group>"; };
 		7A2851A927D98BD000A26531 /* intro-ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-ASL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLApp.swift; sourceTree = "<group>"; };
 		7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_ContentView.swift; sourceTree = "<group>"; };
@@ -121,19 +133,24 @@
 			isa = PBXGroup;
 			children = (
 				7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */,
+				7A071EFE281320C100486442 /* Settings.swift */,
+				7A071EFC281320BA00486442 /* Scores.swift */,
+				7A071EFA281320B100486442 /* Progression.swift */,
+				7A071EF8281320A900486442 /* Progression_ContentView.swift */,
+				7A071EF62813208B00486442 /* Modifier.swift */,
 				7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */,
 				57C301A92812161E00C4AB06 /* main_ContentView.swift */,
+				7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */,
 				7AECE41827EC3C800034ED43 /* Lessons.swift */,
 				7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */,
-				7A2851B027D98BD300A26531 /* Assets.xcassets */,
-				7A2851B227D98BD300A26531 /* Preview Content */,
 				D92140A927D9BBE40021BB20 /* quiz.swift */,
 				574E1B4027FF7B3D0083B166 /* question.swift */,
 				7ABB28F62812452A00DDFFC0 /* SettingBar.swift */,
 				7ABB28F82812456600DDFFC0 /* searchbar.swift */,
 				57C301B1281260E900C4AB06 /* keywords.swift */,
 				7ABB28FC281245E400DDFFC0 /* sampledata1.swift */,
-				7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */,
+				7A2851B027D98BD300A26531 /* Assets.xcassets */,
+				7A2851B227D98BD300A26531 /* Preview Content */,
 			);
 			path = "intro-ASL";
 			sourceTree = "<group>";
@@ -149,6 +166,7 @@
 		7A2851BC27D98BD300A26531 /* intro-ASLTests */ = {
 			isa = PBXGroup;
 			children = (
+				7A071F04281321BF00486442 /* achievements_Test.swift */,
 				7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */,
 				D92140AB27D9BCF00021BB20 /* quiz_tests.swift */,
 				7ABB28F4281244C400DDFFC0 /* SearchBar_tests.swift */,
@@ -299,11 +317,16 @@
 				7ABB28FD281245E400DDFFC0 /* sampledata1.swift in Sources */,
 				57C301B2281260E900C4AB06 /* keywords.swift in Sources */,
 				7ABB28FF2812462200DDFFC0 /* ContentView_Search_Bar.swift in Sources */,
+				7A071EF9281320A900486442 /* Progression_ContentView.swift in Sources */,
 				574E1B4127FF7B3D0083B166 /* question.swift in Sources */,
 				7ABB28F72812452A00DDFFC0 /* SettingBar.swift in Sources */,
 				7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */,
+				7A071EFD281320BA00486442 /* Scores.swift in Sources */,
 				57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */,
 				7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */,
+				7A071EFF281320C100486442 /* Settings.swift in Sources */,
+				7A071EFB281320B100486442 /* Progression.swift in Sources */,
+				7A071EF72813208B00486442 /* Modifier.swift in Sources */,
 				7ABB28F92812456600DDFFC0 /* searchbar.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 				D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */,
@@ -315,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92140AD27D9BDF20021BB20 /* quiz_tests.swift in Sources */,
+				7A071F05281321BF00486442 /* achievements_Test.swift in Sources */,
 				7ABB28F5281244C400DDFFC0 /* SearchBar_tests.swift in Sources */,
 				7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */,
 			);
