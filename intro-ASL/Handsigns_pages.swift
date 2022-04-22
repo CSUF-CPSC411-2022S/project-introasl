@@ -11,46 +11,16 @@ import CoreText
 
 let E = Everything()
 
-struct handsign_a: View{
-    var body: some View{
-        if let apple = UIImage(named: "handsign a"){
-            Image(uiImage: apple)
-            Text("This is the handsign ")
+struct handsign: View{
+    var char : String
+    var body : some View{
+        if let image = UIImage(named: "handsign \(char)"){
+            Image(uiImage: image)
+            Text("This is the handsign \(char)")
         }
     }
 }
 
-struct handsign_b: View{
-    var body: some View{
-        if let bat = UIImage(named: "handsign b"){
-            Image(uiImage: bat)
-        }
-    }
-}
-
-struct handsign_z: View{
-    var body: some View{
-        if let zebra = UIImage(named: "handsign z"){
-            Image(uiImage: zebra)
-        }
-    }
-}
-
-struct handsign_0: View{
-    var body: some View{
-        if let zero = E.numbers[0]{
-            Text(zero)
-        }
-    }
-}
-
-struct handsign_9: View{
-    var body: some View{
-        if let nine = E.numbers[9]{
-            Text(nine)
-        }
-    }
-}
 
 struct handsign_pizza: View{
     var body: some View{

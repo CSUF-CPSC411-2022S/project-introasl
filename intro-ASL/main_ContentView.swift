@@ -55,14 +55,13 @@ struct alpha : View{
         NavigationView{
             List{
                 Section(header: Text("Letters")){
-                    //NavigationLink(destination: handsign(letter: "a")){
-                    NavigationLink(destination: handsign_a()){
+                    NavigationLink(destination: handsign(char: "a")){
                         Text("A")
                     }
-                    NavigationLink(destination: handsign_b()){
+                    NavigationLink(destination: handsign(char: "b")){
                         Text("B")
                     }
-                    NavigationLink(destination: handsign_z()){
+                    NavigationLink(destination: handsign(char: "z")){
                         Text("Z")
                     }
                 }
@@ -76,10 +75,10 @@ struct num : View{
         NavigationView{
             List{
                 Section(header: Text("Numbers")){
-                    NavigationLink(destination: handsign_0()){
+                    NavigationLink(destination: handsign(char: "0")){
                         Text("0")
                     }
-                    NavigationLink(destination: handsign_9()){
+                    NavigationLink(destination: handsign(char: "9")){
                         Text("9")
                     }
                 }
