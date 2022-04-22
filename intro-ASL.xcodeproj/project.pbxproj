@@ -12,10 +12,11 @@
 		7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */; };
 		7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B027D98BD300A26531 /* Assets.xcassets */; };
 		7A2851B427D98BD300A26531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B327D98BD300A26531 /* Preview Assets.xcassets */; };
-		7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */; };
 		7A2851C827D98BD400A26531 /* intro_ASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */; };
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
+		7A7788622812525F006265E7 /* achievements_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7788612812525F006265E7 /* achievements_Test.swift */; };
+		7A77886428125515006265E7 /* intro_ASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */; };
 		7AA0EBBF280F924F00DE80A3 /* Progression_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0EBBE280F924F00DE80A3 /* Progression_ContentView.swift */; };
 		7ABEB82827FE782F003318E4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEB82727FE782F003318E4 /* Settings.swift */; };
 		7ABEB82A27FE78C0003318E4 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEB82927FE78C0003318E4 /* Modifier.swift */; };
@@ -51,6 +52,7 @@
 		7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITests.swift; sourceTree = "<group>"; };
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7A7788612812525F006265E7 /* achievements_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = achievements_Test.swift; sourceTree = "<group>"; };
 		7AA0EBBE280F924F00DE80A3 /* Progression_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression_ContentView.swift; sourceTree = "<group>"; };
 		7ABEB82727FE782F003318E4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		7ABEB82927FE78C0003318E4 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */,
+				7A7788612812525F006265E7 /* achievements_Test.swift */,
 			);
 			path = "intro-ASLTests";
 			sourceTree = "<group>";
@@ -286,7 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */,
+				7A7788622812525F006265E7 /* achievements_Test.swift in Sources */,
+				7A77886428125515006265E7 /* intro_ASLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>achievements_test.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>intro-ASL.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>intro-ASLTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>intro-ASLUITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -18,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>7A2851B827D98BD300A26531</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A2851C227D98BD400A26531</key>
 		<dict>
 			<key>primary</key>
 			<true/>
