@@ -10,13 +10,18 @@
 		574E1B4127FF7B3D0083B166 /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1B4027FF7B3D0083B166 /* question.swift */; };
 		57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301A92812161E00C4AB06 /* main_ContentView.swift */; };
 		7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */; };
-		7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */; };
 		7A2851B127D98BD300A26531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B027D98BD300A26531 /* Assets.xcassets */; };
 		7A2851B427D98BD300A26531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851B327D98BD300A26531 /* Preview Assets.xcassets */; };
 		7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */; };
 		7A2851C827D98BD400A26531 /* intro_ASLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */; };
 		7A2851CA27D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */; };
 		7A2851D927D9933D00A26531 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A2851D827D9933D00A26531 /* .gitignore */; };
+		7ABB28F5281244C400DDFFC0 /* SearchBar_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28F4281244C400DDFFC0 /* SearchBar_tests.swift */; };
+		7ABB28F72812452A00DDFFC0 /* SettingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28F62812452A00DDFFC0 /* SettingBar.swift */; };
+		7ABB28F92812456600DDFFC0 /* searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28F82812456600DDFFC0 /* searchbar.swift */; };
+		7ABB28FB281245B300DDFFC0 /* keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28FA281245B300DDFFC0 /* keywords.swift */; };
+		7ABB28FD281245E400DDFFC0 /* sampledata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28FC281245E400DDFFC0 /* sampledata1.swift */; };
+		7ABB28FF2812462200DDFFC0 /* ContentView_Search_Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */; };
 		7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41827EC3C800034ED43 /* Lessons.swift */; };
 		7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */; };
 		D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92140A927D9BBE40021BB20 /* quiz.swift */; };
@@ -54,6 +59,12 @@
 		7A2851C727D98BD400A26531 /* intro_ASLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITests.swift; sourceTree = "<group>"; };
 		7A2851C927D98BD400A26531 /* intro_ASLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A2851D827D9933D00A26531 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7ABB28F4281244C400DDFFC0 /* SearchBar_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar_tests.swift; sourceTree = "<group>"; };
+		7ABB28F62812452A00DDFFC0 /* SettingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBar.swift; sourceTree = "<group>"; };
+		7ABB28F82812456600DDFFC0 /* searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbar.swift; sourceTree = "<group>"; };
+		7ABB28FA281245B300DDFFC0 /* keywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywords.swift; sourceTree = "<group>"; };
+		7ABB28FC281245E400DDFFC0 /* sampledata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampledata1.swift; sourceTree = "<group>"; };
+		7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_Search_Bar.swift; sourceTree = "<group>"; };
 		7AECE41827EC3C800034ED43 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handsigns_pages.swift; sourceTree = "<group>"; };
 		D92140A927D9BBE40021BB20 /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
@@ -118,6 +129,11 @@
 				7A2851B227D98BD300A26531 /* Preview Content */,
 				D92140A927D9BBE40021BB20 /* quiz.swift */,
 				574E1B4027FF7B3D0083B166 /* question.swift */,
+				7ABB28F62812452A00DDFFC0 /* SettingBar.swift */,
+				7ABB28F82812456600DDFFC0 /* searchbar.swift */,
+				7ABB28FA281245B300DDFFC0 /* keywords.swift */,
+				7ABB28FC281245E400DDFFC0 /* sampledata1.swift */,
+				7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */,
 			);
 			path = "intro-ASL";
 			sourceTree = "<group>";
@@ -135,6 +151,7 @@
 			children = (
 				7A2851BD27D98BD300A26531 /* intro_ASLTests.swift */,
 				D92140AB27D9BCF00021BB20 /* quiz_tests.swift */,
+				7ABB28F4281244C400DDFFC0 /* SearchBar_tests.swift */,
 			);
 			path = "intro-ASLTests";
 			sourceTree = "<group>";
@@ -279,12 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */,
+				7ABB28FD281245E400DDFFC0 /* sampledata1.swift in Sources */,
+				7ABB28FF2812462200DDFFC0 /* ContentView_Search_Bar.swift in Sources */,
 				574E1B4127FF7B3D0083B166 /* question.swift in Sources */,
+				7ABB28F72812452A00DDFFC0 /* SettingBar.swift in Sources */,
+				7ABB28FB281245B300DDFFC0 /* keywords.swift in Sources */,
 				7AECE41927EC3C800034ED43 /* Lessons.swift in Sources */,
 				57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */,
-				7A2851AF27D98BD000A26531 /* quiz_ContentView.swift in Sources */,
 				7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */,
+				7ABB28F92812456600DDFFC0 /* searchbar.swift in Sources */,
 				7A2851AD27D98BD000A26531 /* intro_ASLApp.swift in Sources */,
 				D92140AA27D9BBE40021BB20 /* quiz.swift in Sources */,
 			);
@@ -295,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92140AD27D9BDF20021BB20 /* quiz_tests.swift in Sources */,
+				7ABB28F5281244C400DDFFC0 /* SearchBar_tests.swift in Sources */,
 				7A2851BE27D98BD300A26531 /* intro_ASLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +507,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
