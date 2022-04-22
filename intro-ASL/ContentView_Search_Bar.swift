@@ -14,7 +14,7 @@ struct ContentViewSearchbar: View {
        searcher2()
           .tabItem {
               Image(systemName: "car")
-              Text("Crosswalks")
+              Text("search bar")
           }
       
     }
