@@ -10,6 +10,7 @@
 		574E1B4127FF7B3D0083B166 /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1B4027FF7B3D0083B166 /* question.swift */; };
 		57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301A92812161E00C4AB06 /* main_ContentView.swift */; };
 		57C301B2281260E900C4AB06 /* keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301B1281260E900C4AB06 /* keywords.swift */; };
+		57C301B8281B2FF700C4AB06 /* quiz_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C301B7281B2FF700C4AB06 /* quiz_ContentView.swift */; };
 		7A071EF72813208B00486442 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EF62813208B00486442 /* Modifier.swift */; };
 		7A071EF9281320A900486442 /* Progression_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EF8281320A900486442 /* Progression_ContentView.swift */; };
 		7A071EFB281320B100486442 /* Progression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A071EFA281320B100486442 /* Progression.swift */; };
@@ -55,6 +56,7 @@
 		574E1B4027FF7B3D0083B166 /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
 		57C301A92812161E00C4AB06 /* main_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main_ContentView.swift; sourceTree = "<group>"; };
 		57C301B1281260E900C4AB06 /* keywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keywords.swift; sourceTree = "<group>"; };
+		57C301B7281B2FF700C4AB06 /* quiz_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_ContentView.swift; sourceTree = "<group>"; };
 		7A071EF62813208B00486442 /* Modifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		7A071EF8281320A900486442 /* Progression_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression_ContentView.swift; sourceTree = "<group>"; };
 		7A071EFA281320B100486442 /* Progression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression.swift; sourceTree = "<group>"; };
@@ -63,7 +65,6 @@
 		7A071F04281321BF00486442 /* achievements_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = achievements_Test.swift; sourceTree = "<group>"; };
 		7A2851A927D98BD000A26531 /* intro-ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-ASL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2851AC27D98BD000A26531 /* intro_ASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_ASLApp.swift; sourceTree = "<group>"; };
-		7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz_ContentView.swift; sourceTree = "<group>"; };
 		7A2851B027D98BD300A26531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2851B327D98BD300A26531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A2851B927D98BD300A26531 /* intro-ASLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intro-ASLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,8 +139,8 @@
 				7A071EFA281320B100486442 /* Progression.swift */,
 				7A071EF8281320A900486442 /* Progression_ContentView.swift */,
 				7A071EF62813208B00486442 /* Modifier.swift */,
-				7A2851AE27D98BD000A26531 /* quiz_ContentView.swift */,
 				57C301A92812161E00C4AB06 /* main_ContentView.swift */,
+				57C301B7281B2FF700C4AB06 /* quiz_ContentView.swift */,
 				7ABB28FE2812462200DDFFC0 /* ContentView_Search_Bar.swift */,
 				7AECE41827EC3C800034ED43 /* Lessons.swift */,
 				7AECE41A27EC3D540034ED43 /* Handsigns_pages.swift */,
@@ -325,6 +326,7 @@
 				57C301AA2812161E00C4AB06 /* main_ContentView.swift in Sources */,
 				7AECE41B27EC3D540034ED43 /* Handsigns_pages.swift in Sources */,
 				7A071EFF281320C100486442 /* Settings.swift in Sources */,
+				57C301B8281B2FF700C4AB06 /* quiz_ContentView.swift in Sources */,
 				7A071EFB281320B100486442 /* Progression.swift in Sources */,
 				7A071EF72813208B00486442 /* Modifier.swift in Sources */,
 				7ABB28F92812456600DDFFC0 /* searchbar.swift in Sources */,

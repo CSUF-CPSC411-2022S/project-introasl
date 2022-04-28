@@ -143,9 +143,9 @@ struct HomePage: View {
                 NavigationLink(destination: main_menu()) {
                     Text("Lessons")
                 }
-        //                NavigationLink(destination: QuizView()) {
-        //                  Text("Quiz")
-        //                }
+                        NavigationLink(destination: QuizView()) {
+                          Text("Quiz")
+                        }
                 NavigationLink(destination: Progression_ContentView()) {
                     Text("Achievements")
                 }
