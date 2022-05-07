@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-class searchbar: ObservableObject {
+class Searchbar: ObservableObject {
     
     @Published var listofKeywords = keywordslist
     @Published var searchText : String
@@ -31,7 +31,7 @@ class searchbar: ObservableObject {
         }
       
     }
-    
+    //Reference to searchbar implementation: https://www.youtube.com/watch?v=ReHwsu_fjKs
 
     init(searchText: String  )
     {
