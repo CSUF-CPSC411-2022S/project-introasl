@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 
-class Searchbar: ObservableObject {
+class searchbar: ObservableObject {
     
-    @Published var listofKeywords = keywordslist
+    @Published var listofKeywords = keywordsList
     @Published var searchText : String
     
     

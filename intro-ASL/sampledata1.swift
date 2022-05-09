@@ -7,7 +7,7 @@
 
 import Foundation
 
-public var keywordslist = [
+public var keywordsList = [
 
 "How are you" ,
 "My name is " ,

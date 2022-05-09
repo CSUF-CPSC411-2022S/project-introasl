@@ -21,7 +21,7 @@ struct ContentViewSearchbar: View {
             .tabItem {
                 Image(systemName: "gear")
                 Text("Setting")
-            }
+            } .background(Color(.systemGray6))
       
     }
  }
@@ -32,7 +32,7 @@ struct ContentViewSearchbar: View {
 struct Searcher2 : View{
     @State var listofKeyword = []
     @State var searchText: String = ""
-     @StateObject var Searchbars = Searchbar(searchText: "" )
+     @StateObject var Searchbars = searchbar(searchText: "" )
     @AppStorage("sizeMultiplier") var sizeMultiplier = 0.8
     var body: some View {
        
@@ -69,7 +69,7 @@ struct Searcher2 : View{
           
       }
              
-             .navigationTitle("ASL APP")
+             .navigationTitle("intro ASL")
              .searchable(text: $Searchbars.searchText)
              .background(Color(.systemGray6))
           
