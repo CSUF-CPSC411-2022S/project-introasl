@@ -7,7 +7,7 @@
 
 import Foundation
 
-public var keywordslist = [
+public var keywordsList = [
 
 "How are you" ,
 "My name is " ,
@@ -16,10 +16,22 @@ public var keywordslist = [
 "Good Morning",
 "Good Afternoon",
 "Good Evening" ,
-"Hello" ,
 "Okay",
 "Good Bye",
 "Good Night" ,
+"Hello, how are you" ,
+"0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"Pizza",
+"Turtle",
 "A" ,
 "B" ,
 "C" ,

@@ -11,11 +11,17 @@ struct ContentViewSearchbar: View {
    
     var body: some View
     {    TabView {
-       searcher2()
+       Searcher2()
           .tabItem {
-              Image(systemName: "car")
-              Text("search bar")
+              Image(systemName: "magnifyingglass")
+              Text("Search Bar")
+              
           }
+        Settingsbar()
+            .tabItem {
+                Image(systemName: "gear")
+                Text("Setting")
+            } .background(Color(.systemGray6))
       
     }
  }
@@ -23,39 +29,32 @@ struct ContentViewSearchbar: View {
 
 
 
-struct searcher2 : View{
+struct Searcher2 : View{
     @State var listofKeyword = []
     @State var searchText: String = ""
-     @StateObject var searchbars = searchbar(searchText: "" )
+     @StateObject var Searchbars = searchbar(searchText: "" )
     @AppStorage("sizeMultiplier") var sizeMultiplier = 0.8
     var body: some View {
        
         NavigationView
      {
             VStack(alignment: .leading )
-      {     //Text("Recent search:" )
+      {
          
             List{
-                
-                ForEach(searchbars.words , id:\.self)
+                //Reference to searchbar implementation: https://www.youtube.com/watch?v=ReHwsu_fjKs
+                ForEach(Searchbars.words , id:\.self)
                 { keyword in
                      HStack {
                          Text(keyword.capitalized)
-                         //if(keyword.capitalized == "Good Evening")
-                         // NavigationLink(destination: Text(keyword.capitalized))
-                        //{
+
                          NavigationLink(destination: keywords(imageName: keyword.capitalized)) {
                              
                          }
-                        // }
-                        // if(keyword.capitalized == "Good Morning")
-                        // {
-                        // NavigationLink(destination: Text("Goes to one of the lesson 2 ")) {
-                             //Text(keyword.capitalized)
-                        // }
-                        // }
+                        
+                        
                          Spacer()
-                         Image(systemName: "figure.walk")
+                         Image(systemName: "hand.draw.fill")
                             }
                      .padding()
                      
@@ -66,16 +65,14 @@ struct searcher2 : View{
           
           
               
-              NavigationLink(destination: Settingsbar()) {
-                  Text("⚙️ Settings")
-              }  .padding(.leading, 150)
+
           
       }
-             //TextField("Name", text: $searchText)
-             .navigationTitle("ASL APP")
-             .searchable(text: $searchbars.searchText)
+             
+             .navigationTitle("intro ASL")
+             .searchable(text: $Searchbars.searchText)
              .background(Color(.systemGray6))
-            // .searchable(text: $searchText)
+          
              
     }
         
