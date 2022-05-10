@@ -11,9 +11,7 @@ import SwiftUI
 class Quiz: ObservableObject, Identifiable {
     //  hard-coded test questions, will use database in future
     var answerDictionary: [String:String] = ["Question A":"Answer A", "Question B":"Answer B", "Question C":"Answer C", "Question D":"Answer D", "Question E":"Answer E", "Question F":"Answer F"]
-    //  do we need a timer?
-    var timer: Float
-    
+
     //  for finding the next question
     @Published var index: Int
     var end: Bool
@@ -23,16 +21,10 @@ class Quiz: ObservableObject, Identifiable {
     var questionsAsStrings: [String]
     var results: [Bool]
 
-    //doubt this is necessary but we'll see
-    enum QuizError: Error {
-        case exists
-        case invalid
-    }
     
     @AppStorage("highScore") var highScore = 0
     
     init() {
-        self.timer = 60
         self.results = []
         self.questions = []
         self.questionsAsStrings = []
@@ -58,15 +50,24 @@ class Quiz: ObservableObject, Identifiable {
         
         if index >= questions.count && self.end == false{
             self.end = true
-            //print(results)
-            var score = 0
+            
+            var endScore = 0
             
             for answer in results {
                 if answer == true {
-                    score += 1
+                    endScore += 1
                 }
             }
-            highScore = score
+            highScore = endScore
+            let results = QuizResults(id: -1, max: questions.count, score: endScore, questionsList: questions )
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let archiveURL = documentsDirectory.appendingPathComponent("quizresults").appendingPathExtension("plist")
+            let propertyListEncoder = PropertyListEncoder()
+            if let encodedQuizResult = try?
+                propertyListEncoder.encode(results) {
+                try? encodedQuizResult.write(to: archiveURL,
+                                             options: .noFileProtection)
+            }
             //index = 0
         }
     }
@@ -165,4 +166,14 @@ class Quiz: ObservableObject, Identifiable {
             CreateQuestion()
         }
     }
+}
+
+struct QuizResults: Codable {
+    //  =========NYI===========
+    //  use with database to determine which quiz this is
+    var id: Int
+    //  ========/NYI/==========
+    var max: Int
+    var score: Int
+    var questionsList: [Question]
 }
