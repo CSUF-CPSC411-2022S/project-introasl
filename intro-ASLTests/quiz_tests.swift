@@ -10,45 +10,37 @@ import XCTest
 
 class QuizTest: XCTestCase
 {
-    func testCreateQuestion()
-    {
+    func testCreateQuestion() {
         let quiz = Quiz()
-        quiz.CreateQuestion("Question A")
-        XCTAssertNotNil(quiz.questions.contains("Question A"))
+        quiz.CreateQuestion()
+        XCTAssertTrue(quiz.questions.count > 0)
     }
 
-    func testCreateQuestionFail()
-    {
+    func testCheckAnswer() {
         let quiz = Quiz()
-        quiz.CreateQuestion("Not A Question")
-        XCTAssertNil(quiz.questions.contains("Question A"))
-    }
-
-    func testCheckAnswer()
-    {
-        let quiz = Quiz()
-        quiz.CreateQuestion("Question A")
+        quiz.CreateQuestion()
         
-        let correctAnswer = quiz.answerDictionary["Question A"]
+        let question = quiz.questions[0].question
+        let correctAnswer = quiz.answerDictionary[question]
         
-        if let unwrapped = correctAnswer
-        {
-            XCTAssert(quiz.CheckAnswer(unwrapped))
+        if let unwrapped = correctAnswer {
+            quiz.CheckAnswer(unwrapped)
         }
+        
+        XCTAssertTrue(quiz.results[quiz.results.count - 1])
     }
 
-    func testCheckAnswerFail()
-    {
+    func testCheckAnswerFail() {
         let quiz = Quiz()
-        quiz.CreateQuestion("Question A")
-        XCTAssertFalse(quiz.CheckAnswer("Wrong Answer"))
-    }
-/*
-    func testTimer()
-    {
-        var quiz = Quiz(333.369)
-        XCTAssertEqual(try quiz.timer, 333.369)
-    }
-*/
-    
+        quiz.CreateQuestion()
+        
+        let question = quiz.questions[0].question
+        let correctAnswer = quiz.answerDictionary[question]
+        
+        if let unwrapped = correctAnswer {
+            quiz.CheckAnswer(unwrapped)
+        }
+        
+        XCTAssertFalse(quiz.results[quiz.results.count - 1])
+    }    
 }

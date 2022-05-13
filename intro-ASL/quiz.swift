@@ -142,7 +142,9 @@ class Quiz: ObservableObject, Identifiable {
         if currentAnswer == answer {
             results.append(true)
         }
+        else {
         results.append(false)
+        }
     }
     
     func CalculateScore() -> Int {
