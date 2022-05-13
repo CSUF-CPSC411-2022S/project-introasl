@@ -57,7 +57,7 @@ struct Progression_ContentView: View {
                 }
             }
         }
-        //.accentColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+        .accentColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
         .navigationBarHidden(true)
 
     }
@@ -94,7 +94,7 @@ struct ProgressionTab: View {
     @AppStorage("greenIndex") var greenIndex = 0.751
     @AppStorage("blueIndex") var blueIndex = 0.631
     
-    @State var progress = Progression(lessons: ["Lesson 1": 1, "Lesson 2" : 10])
+    @State var progress = Progression(lessons: ["Lesson 1": 87, "Lesson 2" : 50])
 
     var body: some View {
         VStack {

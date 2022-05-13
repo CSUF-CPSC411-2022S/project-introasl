@@ -127,33 +127,80 @@ struct phrases : View{
 
 //Author: Daisy
 //Date Added: 4-22-2022
+//Updated: 5-13-2022
 struct HomePage: View {
+    @AppStorage("redIndex") var redIndex = 0.611
+    @AppStorage("greenIndex") var greenIndex = 0.751
+    @AppStorage("blueIndex") var blueIndex = 0.631
+    
     var body: some View {
         NavigationView {
             VStack {
                 if let yay = UIImage(named: "introASL"){
                     Image(uiImage: yay)
-                        Spacer()
+                        //Spacer()
                 }
-                Text("Welcome back!")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                Spacer()
-                NavigationLink(destination: main_menu()) {
-                    Text("Lessons")
+                VStack{
+                    Text("Welcome back!")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color(red: redIndex, green: greenIndex, blue: blueIndex), lineWidth: 5))
+                        .foregroundColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                    Spacer()
+                    NavigationLink(destination: main_menu()) {
+                        Text("Lessons")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 20)
+                            .padding()
+                            .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                    }
+                    NavigationLink(destination: QuizView()) {
+                        Text("Quiz")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 20)
+                            .padding()
+                            .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                    }
+                    NavigationLink(destination: Progression_ContentView()) {
+                        Text("Achievements")
+                            .fontWeight(.semibold)
+                            .frame(width: 140, height: 20)
+                            .padding()
+                            .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                    }
+                    NavigationLink(destination: ContentViewSearchbar()) {
+                        Text("Search")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 20)
+                            .padding()
+                            .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                    }
+                    NavigationLink(destination: Settings()) {
+                        Text("Settings")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 20)
+                            .padding()
+                            .background(Color(red: redIndex, green: greenIndex, blue: blueIndex))
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                    }
+                    Spacer()
                 }
-                        NavigationLink(destination: QuizView()) {
-                          Text("Quiz")
-                        }
-                NavigationLink(destination: Progression_ContentView()) {
-                    Text("Achievements")
-                }
-                NavigationLink(destination: ContentViewSearchbar()) {
-                    Text("Search")
-                }
-                Spacer()
             }
         }.navigationBarHidden(true)
+        .accentColor(Color(red: redIndex, green: greenIndex, blue: blueIndex))
     }
 }
+
+//----------------------------------------End of Daisy Work-----------------------------------------------
