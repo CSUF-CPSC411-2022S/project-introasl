@@ -3,6 +3,7 @@
 //  intro-ASL
 //
 //  Created by csuftitan on 4/6/22.
+//  Author: Daisy Ngo
 //
 
 import SwiftUI
